@@ -51,12 +51,6 @@
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
-			.player3 {
-				background-image: url("SNL_ele.png");
-				background-size: contain;
-				background-repeat: no-repeat;
-			}
-
 			input#dice1 {
 					background-color: brown;
 					width: 50px;
@@ -78,26 +72,28 @@
 					overflow: auto;
 					border-style: ridge;
 			}
-			input#play1 {
-				right: 2px;
+			#player2 {
 				position: absolute;
-				bottom: 40px;
-				width: 50px;
+				right: 20px;
+				top: 530px;
 				height: 30px;
-				margin: opx;
-				text-emphasis: 2em;
-				text-align: center;
-				background-color: red;
-				color:black;
+				background-color: rgb(15, 170, 36);
 			}
-			input#play2 {
-				right: 60px;
+			#player1 {
 				position: absolute;
-				bottom: 40px;
-				width: 50px;
+				right: 200px;
+				top: 530px;
 				height: 30px;
-				background-color: orange;
-				color: blue;
+				background-color: aqua;
+			}
+
+			#diceImage {
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 520px;
+				left: 190px;
+				transform: rotate(20deg);
 			}
 
 		</style>
@@ -158,9 +154,10 @@
 			</table>
 			<div id="messageArea">The message displays here!</div>
 			<form>
-				<input type="button" id="play1" placeholder="roll 1">
-				<input type="button" id="play2" placeholder="roll 2">
-				<div id="diceFace">Roll the dice! click red button above!</div>
+				<button onclick="generateRandom(id)" type="button" id="player1">player 1</button>
+				<button onclick="generateRandom(id)" type="button" id="player2">player 2</button>
+				<img id="diceImage" src=""/>
+				<div id="diceFace">Roll the dice! click your button above!</div>
 			</form>
 		</div>
 		<script src=sankeladder.js></script>
