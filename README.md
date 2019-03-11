@@ -1,2 +1,2 @@
 # initiatecoding
-just first few of my programs
+My program for snake and ladder game
