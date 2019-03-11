@@ -71,6 +71,8 @@ var model= {
   checkLadder: function(sum) {
     let i = this.snakebitestart.indexOf(sum)
     if(i>=0) {
+      var audio = new Audio('snake.wav');
+      audio.play();
       move.displayMessage("Ouch!! a SNAKE BITE!");
       return this.snakebiteend[i];
     } else {
@@ -82,6 +84,8 @@ var model= {
   checkSnake: function(sum) {
     let i = this.ladderstart.indexOf(sum)
     if(i>=0) {
+      var audio = new Audio('ladder.wav');
+      audio.play();
       move.displayMessage("Woohoo!! Ladders are Fun!!");
       return this.ladderend[i];
     } else {
@@ -126,6 +130,8 @@ var model= {
       move.displayMessage("You moved to a new location");
       return sum;
     } else if(sum===100) {
+      var audio = new Audio('gamevictory.wav');
+      audio.play();
       move.playerMove(sum,id);
       move.displayMessage("you are the winner!");
       return sum;
