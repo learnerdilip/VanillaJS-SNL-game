@@ -1,2 +1,3 @@
-# initiatecoding
-My program for snake and ladder game
+# Snake and ladder game
+Please clone or download the files and open in any browser...
+Thank you!
